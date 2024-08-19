@@ -1,47 +1,58 @@
-# Data Analysis and Visualizations and Predicting Future Energy Consumption using LSTM
+Project Description
+This project involves the prediction of energy consumption using an LSTM (Long Short-Term Memory) neural network model. The dataset used is hourly energy consumption data from AEP (American Electric Power) spanning from 2004 to 2018. The project aims to analyze the time series data, perform data preprocessing, and build a predictive model to forecast future energy consumption.
 
-## Project Overview
-In this project, I will use LSTM models for a time series prediction task. The goal is to create a model that can accurately predict energy usage given historical consumption data provided.
+README
+Overview
+This repository contains the code and data for predicting energy consumption using an LSTM neural network model. The project is implemented in Python and uses libraries such as Pandas, NumPy, Matplotlib, Seaborn, and Keras.
 
-#### Dataset : AEP_hourly.csv
-Source : Kaggle
+Features
+Data Loading and Preprocessing:
 
-### Exploratory Data Analysis
+Load and explore the AEP hourly energy consumption dataset.
+Perform data cleaning, including handling missing values and extracting relevant date-time features.
+Data Visualization:
 
+Visualize energy consumption trends over the years.
+Explore energy distribution patterns and energy consumption concerning time (monthly analysis).
+Model Building:
 
+Develop an LSTM model with multiple layers and dropout regularization.
+Train the model on the preprocessed data to predict future energy consumption.
+Evaluation:
 
+Evaluate the model's performance by analyzing the loss over epochs.
+Requirements
+Python 3.x
+Pandas
+NumPy
+Matplotlib
+Seaborn
+Keras
+Installation
+Clone the repository and install the necessary packages:
 
-**Energy Comsumption Each Year** 
+bash
+Copy code
+git clone https://github.com/yourusername/energy-consumption-prediction.git
+cd energy-consumption-prediction
+pip install -r requirements.txt
+Usage
+Load Data:
+Load the dataset and perform initial data exploration.
 
+Preprocessing:
+Extract date-time features and resample the data for better analysis.
 
-![image](https://user-images.githubusercontent.com/72246104/212737043-17b3f683-c2b4-4446-8bc0-5405e7b2f0ce.png)
+Model Training:
+Build and train the LSTM model on the processed data.
 
-![image](https://user-images.githubusercontent.com/72246104/212737287-a5197089-8ac2-42e3-9c5f-e98a8b7be0bd.png)
+Prediction:
+Use the trained model to predict future energy consumption.
 
+Visualization:
+Visualize the model's predictions and analyze the results.
 
-<br/>
-
-
-**Energy Distribution**
-
-
-![image](https://user-images.githubusercontent.com/72246104/212737535-cf6aa3f6-01ed-4c21-b273-7d741e06c040.png)
-<br/>
-<br/>
-
-**Energy with respect to time**
-
-![image](https://user-images.githubusercontent.com/72246104/212737991-a7d48165-e982-4daf-b3c6-7fecc94450c1.png)
-
-<br/>
-<br/>
-
-### Results
-<br/>
-
-![image](https://user-images.githubusercontent.com/72246104/212738777-3adf99da-2e57-47dc-8396-55f11eeabf26.png)
-
-
-
-
-
+Files
+AEP_hourly.csv: The dataset containing hourly energy consumption data.
+energy_consumption_prediction.ipynb: Jupyter Notebook with the full code implementation.
+requirements.txt: List of required Python packages.
